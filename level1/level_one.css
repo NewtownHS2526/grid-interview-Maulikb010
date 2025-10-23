@@ -1,4 +1,50 @@
 .container {
     display: grid;
     /* style the columns and rows here */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "a b c d";
+  }
+
+  .a{
+    text-align: center;
+    grid-area: "a";
+    background-color: lightblue;
+    padding: 200px;
+    border-width: 10;
+    border-color: gray;
+    border-style: solid;
+    width: 200px;
+  }
+  .b{
+    text-align: center;
+    grid-area: "b";
+    background-color: lightcoral;
+    padding: 200px;
+    border-width: 3px;
+    border-color: gray;
+    border-style: solid;
+    width: 200px;
+  }
+  .c{
+    text-align: center;
+    grid-area: "c";
+    background-color: lightgreen;
+    padding: 200px;
+    border-width: 3px;
+    border-color: gray;
+    border-style: solid;
+    width: 200px;
+  }
+  .d{
+    text-align: center;
+    grid-area: "d";
+    background-color: lightgoldenrodyellow;
+    padding: 200px;
+    border-width: 3px;
+    border-color: gray;
+    border-style: solid;
+    width: 200px;
   }
