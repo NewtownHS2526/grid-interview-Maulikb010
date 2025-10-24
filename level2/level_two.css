@@ -1,16 +1,409 @@
 .months-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    grid-template-rows: (3 200px);
+    grid-template-areas: 
+    "a b c d"
+    "e f g h"
+    "i j k l";
+}
+
+.ba{
+    background-color: rgb(157, 184, 235);
+    padding: 20px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    grid-area: "a";
+}
+.bb{
+    background-color: lightgreen;
+    padding: 20px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    grid-area: "b";
+}
+.bc{
+    background-color: palegoldenrod;
+    padding: 20px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    grid-area: "c";
+}
+.bd{
+    background-color: lightsalmon;
+    padding: 20px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    grid-area: "d";
+}
+.be{
+    background-color: rgb(206, 131, 156);
+    padding: 20px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    grid-area: "e";
+}
+.bf{
+    background-color: rgb(235, 148, 148);
+    padding: 20px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    grid-area: "f";
+}
+.bg{
+    background-color: rgb(187, 182, 255);
+    padding: 20px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    grid-area: "g";
+}
+.bh{
+    background-color: lightsalmon;
+    padding: 20px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    grid-area: "h";
+}
+.bi{
+    background-color: palegoldenrod;
+    padding: 20px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    grid-area: "i";
+}
+.bj{
+    background-color: rgb(206, 131, 156);
+    padding: 20px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    grid-area: "j";
+}
+.bk{
+    background-color: rgb(157, 184, 235);
+    padding: 20px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    grid-area: "k";
+}
+.bl{
+    background-color: rgb(235, 148, 148);
+    padding: 20px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+    grid-area: "l";
+}
+.days-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows:repeat(5 200px);
+    grid-template-areas: 
+    "a b c d e f g"
+    "h i j k l m n"
+    "o p q r s t u"
+    "v w x y z aa ab"
+    "ac ad ae af ag ah ai";
+}
+.a{
+    background-color: #6bb2e0;
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
     text-align: center;
 }
-
-.months-container div {
-    background-color: #db6868;
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
+.b{
+    background-color: lightgreen;
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
 }
-
-.days-container {
+.c{
+    background-color: palegoldenrod;
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.d{
+    background-color: lightsalmon;
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.e{
+    background-color: rgb(206, 131, 156);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.f{
+    background-color: rgb(235, 148, 148);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.g{
+    background-color: rgb(157, 184, 235);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.h{
+    background-color: lightsalmon;
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.i{
+    background-color: palegoldenrod;
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.j{
+    background-color: rgb(206, 131, 156);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.k{
+    background-color: rgb(157, 184, 235);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.l{
+    background-color: rgb(235, 148, 148);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.m{
+    background-color: rgb(157, 184, 235);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.n{
+    background-color: rgb(156, 230, 153);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.o{
+    background-color: rgb(206, 131, 156);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.p{
+    background-color: lightsalmon;
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.q{
+    background-color: rgb(157, 184, 235);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.r{
+    background-color: rgb(235, 148, 148);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.s{
+    background-color: rgb(157, 184, 235);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.t{
+    background-color: rgb(206, 131, 156);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.u{
+    background-color: palegoldenrod;
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.v{
+    background-color: rgb(156, 230, 153);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.w{
+    background-color: rgb(157, 184, 235);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.x{
+    background-color: rgb(235, 148, 148);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.y{
+    background-color: rgb(206, 131, 156);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.z{
+    background-color: rgb(156, 230, 153);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.aa{
+    background-color: palegoldenrod;
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.ab{
+    background-color: lightsalmon;
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.ac{
+    background-color: rgb(157, 184, 235);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.ad{
+    background-color: rgb(235, 148, 148);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.ae{
+    background-color: rgb(157, 184, 235);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.af{
+    background-color: lightsalmon;
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.ag{
+    background-color: palegoldenrod;
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.ah{
+    background-color: rgb(156, 230, 153);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+.ai{
+    background-color: rgb(206, 131, 156);
+    padding: 10px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    text-align: center;
 }
